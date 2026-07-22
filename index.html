@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background bunga -->
+    <div id="flowers"></div>
+
+    <!-- Halaman 1 -->
+    <section class="page active" id="page1">
+
+        <div class="card">
+
+            <h1>Apakah JOHANLEPP keren?</h1>
+
+            <p>
+                Jawab yang jujur yaa...
+            </p>
+
+            <div class="btnBox">
+
+                <button class="btn" onclick="nextPage('page2')">
+                    Iya
+                </button>
+
+                <button class="btn" onclick="nextPage('page2')">
+                    Setuju
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Halaman 2 -->
+    <section class="page" id="page2">
+
+        <div class="card">
+
+            <h1>Apa yang keren dari JOHANLEPP?</h1>
+
+            <div class="btnBox">
+
+                <button class="btn" onclick="nextPage('page3')">
+                    Karena dia JOHANLEPP
+                </button>
+
+                <button
+                    class="btn wrong"
+                    id="wrongBtn"
+                    onclick="wrongAnswer()">
+
+                    Karena dia ada LEPP nya
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Halaman 3 -->
+    <section class="page" id="page3">
+
+        <div class="card">
+
+            <div class="flowerIcon">
+                💐
+            </div>
+
+            <h2>Terima Kasih</h2>
+
+            <p id="typing"></p>
+
+            <button id="openBtn" class="btn" onclick="showLetter()">
+                Buka Ucapan
+            </button>
+
+        </div>
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
